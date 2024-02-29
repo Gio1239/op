@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Omnipoint</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div>
+                <a href="#"><img src="img/logo.svg" alt="Omnipoint Logo"></a>
+            </div>
+            <ul>
+                <div class="dropdown">
+                    <span class="dropbtn a-hov">About Us</span>
+                    <div class="dropdown-content">
+                        <a href="#" class="a-hov">Team</a>
+                        <a href="#" class="a-hov">Foundation History</a>
+                    </div>
+                </div>
+
+                <li><a href="page/marketplace.html" class="a-hov">Marketplace</a></li>
+                <li><a href="#" class="a-hov">How it Work</a></li>
+                <li><a href="#" class="a-hov">Contact Us</a></li>
+            </ul>
+            <div class="log-nav">
+                <a href="#personId" class="a-hov">Login</a>
+                <a href="page/registration.html" class="a-hov">Sing In</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="cont-wal">
+                <img src="img/wallpaper.svg" alt="wallpaper">
+            </div>
+            <div class="cont-log">
+                <div class="log-form">
+                    <form action="/page/user.html" class="log">
+
+                        <h2 class="hname">Login</h2>
+
+                        <label for="personId"></label>
+                        <input type="number" name="userId" id="personId" placeholder="Enter Personal ID" required>
+
+                        <label for="psw"></label>
+                        <input type="password" name="pass" id="psw" placeholder="Enter your Password" required>
+
+                        <button type="submit" class="btn" onclick="userLogin()">Login</button>
+                        <br>
+                        <br>
+
+                        <span id="message"></span>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-info">
+            <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+        </div>
+        <div class="copyright">
+            <div>&copy; Copyright 2024 omnipoint</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
